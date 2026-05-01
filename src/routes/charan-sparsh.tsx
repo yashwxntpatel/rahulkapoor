@@ -8,26 +8,26 @@ import rahul9 from "@/assets/rahul/rahul9.jpg";
 export const Route = createFileRoute("/charan-sparsh")({
   head: () => ({
     meta: [
-      { title: "Charan Sparsh — A 90-Minute Experience That Returns Your Family" },
-      { name: "description", content: "An immersive live transformational experience by Rahul Kapoor. Science, psychology, and Indian wisdom — for ages 5 to 100." },
-      { property: "og:title", content: "Charan Sparsh — Touch the feet that walked you here." },
-      { property: "og:description", content: "90 minutes. A lifetime returned. The signature experience by Rahul Kapoor." },
+      { title: "Charan Sparsh — Phase One. The Awakening." },
+      { name: "description", content: "A live experience that works beneath the surface. Not a talk. A space where families encounter what years of silence have obscured." },
+      { property: "og:title", content: "Charan Sparsh — The beginning of a rare process." },
+      { property: "og:description", content: "The first phase of Rahul Kapoor's private family transformation. An emotional awakening designed for those who already sense what is at stake." },
     ],
   }),
   component: CharanSparshPage,
 });
 
 const roomCards = [
-  { t: "The Science", d: "What gratitude and physical reverence do to dopamine, oxytocin, and the parasympathetic nervous system." },
-  { t: "The Psychology", d: "Why the people we love most are the ones we hide from — and how to dismantle that wall in a single sitting." },
-  { t: "The Story", d: "Rahul's storytelling reaches the part of you that boardrooms and bank accounts have learned to bypass." },
-  { t: "The Gesture", d: "A simple, ancient touch — performed together — that rearranges decades of distance in seconds." },
+  { t: "The Science", d: "What gratitude and reverence do to the architecture of the nervous system — and why the body carries what the mind refuses to acknowledge." },
+  { t: "The Psychology", d: "Why the people we love most become the ones we hide from — and how a single, held experience begins to dismantle that." },
+  { t: "The Story", d: "Rahul's stories reach the part of a person that achievement has learned to bypass. They arrive without warning. They do not ask permission to stay." },
+  { t: "The Gesture", d: "An ancient act, performed together — that rearranges decades of accumulated distance in a single, unhurried moment." },
 ];
 
 const challengeCards = [
-  { d: "7 Days", t: "The Reconnect", p: "Daily 10-minute rituals to reopen what years have closed." },
-  { d: "14 Days", t: "The Realign", p: "Conversations, gestures, and shared decisions that rebuild trust." },
-  { d: "21 Days", t: "The Rebuild", p: "A new family rhythm that survives the noise of modern life." },
+  { d: "7 Days", t: "The Opening", p: "Daily rituals to sustain what the experience has awakened. Small. Repeatable. Irreversible." },
+  { d: "14 Days", t: "The Repair", p: "Conversations and gestures that begin to rebuild the trust that distance quietly eroded." },
+  { d: "21 Days", t: "The Foundation", p: "A new rhythm that the family can carry forward — long after the room has gone quiet." },
 ];
 
 const cardPopVariants = {
@@ -105,19 +105,19 @@ function CharanSparshPage() {
             </div>
           </Reveal>
           <Reveal delay={0.15}>
-            <div className="text-[10px] tracking-[0.4em] uppercase text-gold mb-6">The Signature Experience</div>
+            <div className="text-[10px] tracking-[0.4em] uppercase text-gold mb-6">Phase One · The Awakening</div>
           </Reveal>
           <Reveal delay={0.25}>
             <h1 className="font-display text-[clamp(2.5rem,8vw,7rem)] leading-[0.95] font-light max-w-5xl">
-              Touch the feet
+              The beginning
               <br />
-              <span className="font-serif-italic text-gradient-gold">that walked you here.</span>
+              <span className="font-serif-italic text-gradient-gold">of the return.</span>
             </h1>
           </Reveal>
         </div>
       </section>
 
-      {/* ── 90 Minutes ── */}
+      {/* ── What It Is ── */}
       <section className="bg-ivory py-32 grain">
         <div className="max-w-[1100px] mx-auto px-6 grid md:grid-cols-12 gap-12">
           <Reveal className="md:col-span-5">
@@ -126,10 +126,10 @@ function CharanSparshPage() {
           </Reveal>
           <Reveal delay={0.1} className="md:col-span-7">
             <p className="text-2xl font-display font-light leading-snug text-foreground">
-              In an age that has taught us to bow only to screens and salaries, Charan Sparsh is a quiet rebellion — a 90-minute live experience that returns the body, the heart, and the family to the same room.
+              Not a talk. Not a seminar. A carefully constructed space in which families encounter what years of distance, ambition, and silence have quietly obscured.
             </p>
             <p className="mt-8 text-lg text-foreground/75 leading-relaxed">
-              Rahul Kapoor moves through the room like a guide through a forgotten landscape. Children meet parents they had defined too early. Parents meet children they had stopped seeing. By the time the lights come up, no one looks the same.
+              Rahul moves through the room with the precision of someone who has spent decades observing what families carry and what they refuse to set down. Those who enter rarely leave the same. What shifts in that room tends to stay shifted.
             </p>
           </Reveal>
         </div>
@@ -140,7 +140,7 @@ function CharanSparshPage() {
         <div className="max-w-[1400px] mx-auto px-6">
           <Reveal>
             <h2 className="font-display text-[clamp(2rem,5vw,4rem)] font-light mb-16">
-              What happens inside the room.
+              What unfolds inside the room.
             </h2>
           </Reveal>
 
@@ -168,7 +168,6 @@ function CharanSparshPage() {
                   </motion.div>
                   <div className="text-ivory/65 text-sm leading-relaxed">{c.d}</div>
 
-                  {/* Gold bottom accent line on hover */}
                   <motion.div
                     className="mt-8 h-px bg-gradient-to-r from-[#C6A25D] to-transparent"
                     initial={{ scaleX: 0, originX: 0 }}
@@ -182,13 +181,13 @@ function CharanSparshPage() {
         </div>
       </section>
 
-      {/* ── Challenge Cards ── */}
+      {/* ── After the Room ── */}
       <section className="bg-ivory py-32 grain">
         <div className="max-w-[1200px] mx-auto px-6">
           <Reveal>
-            <div className="text-[10px] tracking-[0.4em] uppercase text-muted-foreground mb-4">After the Room</div>
+            <div className="text-[10px] tracking-[0.4em] uppercase text-muted-foreground mb-4">After the Experience</div>
             <h2 className="font-display text-[clamp(2rem,5vw,4rem)] font-light max-w-3xl mb-16">
-              The 7, 14, and 21-day family bonding challenges.
+              The 7, 14, and 21-day continuance practices.
             </h2>
           </Reveal>
 
@@ -203,7 +202,6 @@ function CharanSparshPage() {
                   animate="rest"
                   style={{ borderRadius: 2 }}
                 >
-                  {/* Day label with sliding underline */}
                   <div className="relative inline-block mb-4">
                     <div className="text-sm tracking-[0.25em] uppercase text-muted-foreground">{c.d}</div>
                     <motion.div
@@ -222,7 +220,6 @@ function CharanSparshPage() {
                   </motion.div>
                   <p className="text-foreground/70">{c.p}</p>
 
-                  {/* Arrow that appears on hover */}
                   <motion.div
                     className="mt-6 text-foreground/30 text-sm tracking-widest"
                     initial={{ opacity: 0, x: -6 }}
@@ -245,9 +242,9 @@ function CharanSparshPage() {
         <div className="relative max-w-[1100px] mx-auto px-6">
           <Reveal>
             <h2 className="font-display text-[clamp(2.25rem,6vw,5rem)] font-light leading-[1] max-w-4xl">
-              The room is waiting.
+              The space is held.
               <br />
-              <span className="font-serif-italic text-gradient-gold">Bring everyone you love.</span>
+              <span className="font-serif-italic text-gradient-gold">For those who are ready to enter.</span>
             </h2>
           </Reveal>
           <Reveal delay={0.15}>
@@ -256,13 +253,13 @@ function CharanSparshPage() {
                 to="/contact"
                 className="inline-flex items-center gap-3 px-7 py-4 rounded-full bg-gradient-gold text-navy-deep font-medium shadow-gold hover:scale-[1.03] transition-transform"
               >
-                Bring Charan Sparsh to your city →
+                Bring Charan Sparsh to your gathering →
               </Link>
               <Link
                 to="/events"
                 className="inline-flex items-center gap-3 px-7 py-4 rounded-full border border-ivory/30 hover:bg-ivory/5 transition-colors"
               >
-                Upcoming dates
+                View upcoming dates
               </Link>
             </div>
           </Reveal>
