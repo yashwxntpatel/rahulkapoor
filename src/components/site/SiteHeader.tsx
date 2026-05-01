@@ -6,10 +6,10 @@ import { Menu, X } from "lucide-react";
 const nav = [
   { to: "/", label: "Home" },
   { to: "/charan-sparsh", label: "Charan Sparsh" },
-  { to: "/family-groww", label: "Family Groww" },
+  { to: "/family-groww", label: "Family First" },
   { to: "/about", label: "About" },
-  { to: "/testimonials", label: "Stories" },
-  { to: "/events", label: "Events" },
+  { to: "/testimonials", label: "Accounts" },
+  { to: "/events", label: "Gatherings" },
   { to: "/contact", label: "Contact" },
 ];
 
@@ -42,7 +42,7 @@ export function SiteHeader() {
               RAHUL KAPOOR
             </div>
             <div className="text-[10px] tracking-[0.28em] uppercase opacity-60">
-              Family Mindset Coach
+              Private Family Transformation
             </div>
           </div>
         </Link>
@@ -66,7 +66,7 @@ export function SiteHeader() {
             to="/contact"
             className="btn-premium hidden md:inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-gold text-ink text-sm font-semibold shadow-gold"
           >
-            Enquire Now
+            Request Consideration
           </Link>
           <button
             onClick={() => setOpen(true)}
