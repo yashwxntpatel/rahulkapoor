@@ -10,25 +10,25 @@ import reel4 from "@/assets/videos/reel4.mp4";
 export const Route = createFileRoute("/testimonials")({
   head: () => ({
     meta: [
-      { title: "Stories — What Families Say After Charan Sparsh" },
-      { name: "description", content: "Real stories from real families across India, USA, UAE, Australia, and Thailand." },
-      { property: "og:title", content: "Stories from inside the room." },
-      { property: "og:description", content: "What families say after Charan Sparsh and Family Groww." },
+      { title: "Accounts — Words from Families Who Entered the Process" },
+      { name: "description", content: "These are not testimonials. They are accounts — from families who entered a rare and private space, and came out changed." },
+      { property: "og:title", content: "Accounts from inside the room." },
+      { property: "og:description", content: "What families carry with them after Charan Sparsh and the private engagement with Rahul Kapoor." },
     ],
   }),
   component: TestimonialsPage,
 });
 
 const stories = [
-  { q: "I held my mother's feet for the first time in 31 years. She held my face like I was four again. I have not stopped crying — or smiling.", a: "Anil M.", r: "CEO, Mumbai" },
-  { q: "I came for my parents. I left realizing I was the one who needed to come back.", a: "Priya S.", r: "Banker, Dubai" },
-  { q: "Rahul does not give a talk. He gives you back the people you forgot to love loudly.", a: "Dr. R. Iyer", r: "Surgeon, Bangalore" },
-  { q: "My 16-year-old put down his phone for 90 minutes. Then he hugged me. We have not stopped talking since.", a: "Meera P.", r: "Mother, Sydney" },
-  { q: "I run a 4,000-person company. I had not asked my father how he was in two years. That ended that night.", a: "Karan V.", r: "Founder, Bengaluru" },
-  { q: "It felt less like a session and more like a homecoming none of us knew we needed.", a: "The Sharma Family", r: "Houston" },
-  { q: "Rahul has the rarest gift — he makes silence feel safe enough to speak in.", a: "Asha N.", r: "Educator, Pune" },
-  { q: "I lost my father six months later. The last time I touched his feet was that evening with Rahul. I will carry that gift forever.", a: "Vikram T.", r: "Entrepreneur, Delhi" },
-  { q: "My teenage daughter said, 'Dad, you finally listened.' I did not realize how loudly I had been talking.", a: "Rohan G.", r: "Architect, Dubai" },
+  { q: "I held my mother's feet for the first time in 31 years. She held my face like I was four again. Something I had stopped believing was possible — happened.", a: "Anil M.", r: "CEO · Mumbai" },
+  { q: "I arrived for my parents. I left realising I was the one who had gone furthest from them. That clarity alone was worth everything.", a: "Priya S.", r: "Banker · Dubai" },
+  { q: "Rahul does not deliver a talk. He creates a space so held, so precise, that something true becomes possible inside it.", a: "Dr. R. Iyer", r: "Surgeon · Bangalore" },
+  { q: "My 16-year-old put down his phone for 90 minutes. Then he hugged me. We have not stopped talking since. That was fourteen months ago.", a: "Meera P.", r: "Mother · Sydney" },
+  { q: "I lead a company of four thousand people. I had not asked my father how he was in two years. That ended that night. I am still grateful.", a: "Karan V.", r: "Founder · Bengaluru" },
+  { q: "It felt less like an event and more like a homecoming none of us had known we needed. The silence after was the most honest thing I had heard in years.", a: "The Sharma Family", r: "Houston" },
+  { q: "Rahul has the rarest quality — he makes silence feel safe enough to speak inside it. We did not know we had so much to say.", a: "Asha N.", r: "Educator · Pune" },
+  { q: "I lost my father six months later. The last time I touched his feet was the evening with Rahul. I will carry that gift for the rest of my life.", a: "Vikram T.", r: "Entrepreneur · Delhi" },
+  { q: "My daughter said: 'Dad, you finally listened.' I had not understood until that moment how loudly I had been speaking without hearing.", a: "Rohan G.", r: "Architect · Dubai" },
 ];
 
 const reels = [reel1, reel2, reel3, reel4];
@@ -232,20 +232,20 @@ function TestimonialsPage() {
         <div className="max-w-[1400px] mx-auto px-6">
           <Reveal>
             <div className="text-[10px] tracking-[0.4em] uppercase text-muted-foreground mb-6 flex items-center gap-3">
-              <span className="h-px w-12 bg-foreground/30" /> Stories from the Room
+              <span className="h-px w-12 bg-foreground/30" /> Accounts from the Process
             </div>
           </Reveal>
           <Reveal delay={0.1}>
             <h1 className="font-display text-[clamp(2.5rem,7vw,6.5rem)] leading-[0.95] font-light max-w-5xl">
-              The proof is the
+              These are not reviews.
               <br />
-              <span className="font-serif-italic text-gradient-gold">silence after the hug.</span>
+              <span className="font-serif-italic text-gradient-gold">They are accounts of a return.</span>
             </h1>
           </Reveal>
         </div>
       </section>
 
-      {/* ── Testimonial Cards ── */}
+      {/* ── Story Cards ── */}
       <section className="bg-ivory pb-32 grain">
         <div className="max-w-[1400px] mx-auto px-6 columns-1 md:columns-2 lg:columns-3 gap-6 [column-fill:_balance]">
           {stories.map((s, i) => (
@@ -254,7 +254,7 @@ function TestimonialsPage() {
         </div>
       </section>
 
-      {/* ── Reels Video Section ── */}
+      {/* ── Reels ── */}
       <section className="bg-[#020617] py-28 grain overflow-x-hidden">
         <div className="max-w-[1400px] mx-auto px-6">
           <Reveal>
@@ -264,13 +264,12 @@ function TestimonialsPage() {
           </Reveal>
           <Reveal delay={0.1}>
             <h2 className="font-display text-[clamp(2rem,4.5vw,4.5rem)] leading-[0.95] font-light text-white max-w-3xl mb-16">
-              Feel it before
+              Sense what happens
               <br />
-              <span className="font-serif-italic text-gradient-gold">you arrive.</span>
+              <span className="font-serif-italic text-gradient-gold">before you arrive.</span>
             </h2>
           </Reveal>
 
-          {/* Reel grid: horizontal scroll mobile / 4-col desktop */}
           <div className="
             flex gap-4 overflow-x-auto snap-x snap-mandatory pb-6
             md:grid md:grid-cols-4 md:overflow-visible md:gap-5
@@ -281,7 +280,6 @@ function TestimonialsPage() {
             ))}
           </div>
 
-          {/* Subtle bottom caption */}
           <Reveal delay={0.2}>
             <p className="mt-10 text-white/25 text-sm tracking-wide text-center">
               Hover to play · Sound on by default
@@ -294,7 +292,8 @@ function TestimonialsPage() {
       <section className="bg-navy-deep text-ivory py-28 text-center grain">
         <Reveal>
           <h2 className="font-display text-[clamp(2rem,5vw,4rem)] font-light max-w-3xl mx-auto px-6">
-            Your story is the next page.
+            If this resonates —
+            <span className="font-serif-italic text-gradient-gold"> you already understand the next step.</span>
           </h2>
         </Reveal>
         <Reveal delay={0.15}>
@@ -302,7 +301,7 @@ function TestimonialsPage() {
             to="/contact"
             className="mt-10 inline-flex items-center gap-3 px-7 py-4 rounded-full bg-gradient-gold text-navy-deep font-medium shadow-gold hover:scale-[1.03] transition-transform"
           >
-            Enquire Now →
+            Request Consideration →
           </Link>
         </Reveal>
       </section>
