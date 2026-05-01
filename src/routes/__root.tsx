@@ -1,5 +1,5 @@
 import { Outlet, Link, createRootRoute, HeadContent, Scripts } from "@tanstack/react-router";
-import AIAgent from "../components/AIAgent";
+import AIAgent from "../components/site/AIAgent";
 
 import appCss from "../styles.css?url";
 
