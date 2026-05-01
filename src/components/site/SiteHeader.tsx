@@ -13,9 +13,17 @@ const nav = [
   { to: "/contact", label: "Contact" },
 ];
 
-export function SiteHeader() {
+interface SiteHeaderProps {
+  /** "light" = white text over dark hero (home page).
+   *  "dark"  = ink text over light background (all other pages). */
+  variant?: "light" | "dark";
+}
+
+export function SiteHeader({ variant = "dark" }: SiteHeaderProps) {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+
+  const isLight = variant === "light";
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40);
@@ -31,7 +39,9 @@ export function SiteHeader() {
       transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
       className={`fixed top-0 inset-x-0 z-50 transition-all duration-700 ${
         scrolled
-          ? "bg-ivory/85 backdrop-blur-2xl border-b border-foreground/10 py-3 text-ink"
+          ? "bg-ivory/90 backdrop-blur-2xl border-b border-foreground/10 py-3 text-ink"
+          : isLight
+          ? "bg-transparent py-6 text-ivory border-b border-ivory/10"
           : "bg-ivory/10 backdrop-blur-xl py-6 text-ink border-b border-foreground/10"
       }`}
     >
