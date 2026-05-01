@@ -15,14 +15,14 @@ import rahul13 from "@/assets/rahul/rahul13.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Rahul Kapoor — You Built Success. Now Rebuild Connection." },
-      { name: "description", content: "A cinematic family transformation experience by Rahul Kapoor — transformational speaker behind Charan Sparsh & Family Groww. 50,000+ lives across 5 countries." },
-      { property: "og:title", content: "Rahul Kapoor — Reconnect. Realign. Rebuild Family." },
-      { property: "og:description", content: "Charan Sparsh — a 90-minute experience that has moved 50,000+ people across India, USA, UAE, Australia & Thailand." },
+      { title: "Rahul Kapoor — Private Family Transformation" },
+      { name: "description", content: "A deeply private, long-term engagement for families ready to restore what distance has quietly undone. By invitation only." },
+      { property: "og:title", content: "Rahul Kapoor — Private Family Transformation" },
+      { property: "og:description", content: "Charan Sparsh — the beginning of a rare and private process. For families who already understand what is at stake." },
     ],
   }),
   component: HomePage,
-});
+}));
 
 function HomePage() {
   return (
@@ -83,18 +83,18 @@ function Hero() {
           className="flex items-center gap-4 mb-10"
         >
           <span className="h-px w-14 bg-gold" />
-          <span className="hairline text-gold">A Family Transformation Experience</span>
+          <span className="hairline text-gold">A Private Family Transformation</span>
         </motion.div>
 
         <h1 className="font-display text-[clamp(2.75rem,9vw,9rem)] leading-[0.92] max-w-[16ch]">
-          <SplitWords text="You built" className="text-ivory" />
+          <SplitWords text="The distance" className="text-ivory" />
           <br />
-          <SplitWords text="success." delay={0.15} className="text-ivory" />
+          <SplitWords text="grew slowly." delay={0.15} className="text-ivory" />
           <span className="block mt-2">
             <span className="font-serif-italic font-light text-gold-light">
-              <SplitWords text="But lost" delay={0.5} className="text-gold-light" />
+              <SplitWords text="You stopped" delay={0.5} className="text-gold-light" />
               <br />
-              <SplitWords text="connection." delay={0.75} className="text-gold-light" />
+              <SplitWords text="noticing." delay={0.75} className="text-gold-light" />
             </span>
           </span>
         </h1>
@@ -106,17 +106,17 @@ function Hero() {
           className="mt-12 grid md:grid-cols-12 gap-8 items-end"
         >
           <p className="md:col-span-5 text-base md:text-lg text-ivory/65 max-w-md leading-relaxed">
-            For 25 years, Rahul Kapoor has helped 50,000+ people across 5 countries
-            return to the one room they had been avoiding —
-            <span className="text-ivory"> the one with their family in it.</span>
+            Rahul Kapoor works privately with a handful of families each year —
+            to restore what years of silence, ambition, and distance have quietly undone.
+            <span className="text-ivory"> This is not for everyone.</span>
           </p>
 
           <div className="md:col-span-7 md:text-right flex md:justify-end gap-5 flex-wrap">
             <MagneticButton as={Link} to="/charan-sparsh" variant="gold">
-              Experience Charan Sparsh <span className="ml-1">→</span>
+              Enter Charan Sparsh <span className="ml-1">→</span>
             </MagneticButton>
             <MagneticButton as={Link} to="/contact" variant="ghost" className="text-ivory border-ivory/40">
-              Enquire Now
+              Request Consideration
             </MagneticButton>
           </div>
         </motion.div>
@@ -173,10 +173,10 @@ function EmotionalGap() {
       <div className="max-w-[1400px] mx-auto px-6 lg:px-12 grid md:grid-cols-12 gap-12">
         <Reveal className="md:col-span-4">
           <div className="md:sticky md:top-32">
-            <div className="hairline text-foreground/60 mb-6">01 · The Quiet Crisis</div>
+            <div className="hairline text-foreground/60 mb-6">01 · The Quiet Unravelling</div>
             <div className="gold-rule w-24 mb-8" />
             <p className="font-serif-italic text-foreground/70 max-w-xs">
-              Somewhere between the next promotion and the next school admission, the family slipped through the cracks.
+              No one chooses distance. It arrives in the pauses between conversations that keep getting shorter.
             </p>
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -208,10 +208,10 @@ function EmotionalGap() {
 
           <div className="grid sm:grid-cols-2 gap-10 mt-14">
             {[
-              { n: "73%", t: "of urban Indian families report less than 30 minutes of meaningful conversation a day." },
-              { n: "1 in 2", t: "teenagers say their parents are present at home but emotionally absent." },
-              { n: "8 yrs", t: "average age a child stops sharing their inner world with a parent." },
-              { n: "0", t: "of these wounds get healed by another promotion or a bigger house." },
+              { n: "73%", t: "of urban families report less than 30 minutes of meaningful conversation each day." },
+              { n: "1 in 2", t: "children say their parents are present at home but emotionally unreachable." },
+              { n: "8 yrs", t: "average age a child stops sharing their interior world with a parent." },
+              { n: "0", t: "of these fractures are healed by another promotion, another trip, another year of waiting." },
             ].map((s, i) => (
               <Reveal key={i} delay={i * 0.08} className="border-t border-foreground/15 pt-6">
                 <div className="font-display text-5xl md:text-6xl text-ink mb-3">{s.n}</div>
@@ -232,15 +232,15 @@ function RealityContrast() {
     <section className="bg-ink text-ivory py-32 md:py-44 grain overflow-hidden">
       <div className="max-w-[1500px] mx-auto px-6 lg:px-12">
         <Reveal>
-          <div className="hairline text-gold mb-6">02 · The Contrast</div>
+          <div className="hairline text-gold mb-6">02 · The Fracture</div>
         </Reveal>
         <Reveal delay={0.1}>
           <h2 className="font-display text-[clamp(2.25rem,6vw,6rem)] leading-[0.95] max-w-[14ch] mb-20">
             Outside,
-            <span className="font-serif-italic font-light text-gold-light"> applause.</span>
+            <span className="font-serif-italic font-light text-gold-light"> recognition.</span>
             <br />
             Inside,
-            <span className="font-serif-italic font-light text-ivory/40"> a closed door.</span>
+            <span className="font-serif-italic font-light text-ivory/40"> a closed room.</span>
           </h2>
         </Reveal>
 
@@ -252,7 +252,7 @@ function RealityContrast() {
                 What the world sees
               </div>
               <p className="mt-6 text-lg text-ivory/90 max-w-md">
-                Awards. Promotions. Trips. Posts. Filtered photographs of a life that looks beautifully arranged.
+                The awards. The milestones. The carefully arranged photographs of a life that appears complete.
               </p>
             </div>
           </Reveal>
@@ -260,10 +260,10 @@ function RealityContrast() {
             <div className="relative md:mt-24">
               <ImageReveal src={rahul1} alt="Quiet disconnect" ratio="4/5" className="rounded-sm" />
               <div className="absolute top-6 left-6 hairline text-ink bg-gold px-3 py-2">
-                What the family feels
+                What the family carries
               </div>
               <p className="mt-6 text-lg text-ivory/90 max-w-md">
-                A child who stops asking. A parent who stops reaching. A spouse who learned not to wait up.
+                A child who stopped asking. A parent who stopped reaching. A silence so old, no one remembers how it began.
               </p>
             </div>
           </Reveal>
@@ -287,39 +287,38 @@ function Introduction() {
 
         <Reveal>
           <div className="hairline text-foreground/60">
-            03 · The Voice
+            03 · The Work
           </div>
         </Reveal>
 
         <Reveal delay={0.1}>
           <h2 className="font-display text-[clamp(2.2rem,5vw,4.75rem)] leading-[0.95] max-w-[18ch] tracking-tight">
-            <SplitWords text="Rahul Kapoor has spent" className="text-ink" />
+            <SplitWords text="Rahul Kapoor works" className="text-ink" />
             <br />
             <span className="font-serif italic font-light">
-              <SplitWords text="25 years" delay={0.2} className="text-foreground/70" />
+              <SplitWords text="where others" delay={0.2} className="text-foreground/70" />
             </span>
             <span className="block">
-              <SplitWords text="learning what families forget." delay={0.35} className="text-ink" />
+              <SplitWords text="have not gone." delay={0.35} className="text-ink" />
             </span>
           </h2>
         </Reveal>
 
         <Reveal delay={0.2}>
           <p className="text-base md:text-lg text-neutral-600 leading-relaxed max-w-xl">
-            A transformational speaker and family mindset coach, Rahul stands at the
-            rare intersection of{" "}
-            <span className="text-neutral-900">psychology, science and Indian wisdom</span>.
+            For over two decades, he has worked quietly —{" "}
+            <span className="text-neutral-900">observing families in their truth, not their performance.</span>
             <br className="hidden md:block" />
-            He doesn't sell hacks. He gives families their own voices back —
-            the ones that got buried under deadlines, devices, and well-meaning ambition.
+            He does not offer methods. He enters the specific, private terrain of a family
+            and works with what is actually there — the unspoken, the inherited, the long-buried.
           </p>
         </Reveal>
 
         <div className="grid grid-cols-3 gap-8 max-w-xl pt-4">
           {[
-            { n: "50K+", t: "lives moved" },
+            { n: "2–3", t: "families per year" },
             { n: "5", t: "countries" },
-            { n: "25", t: "years on stage" },
+            { n: "25", t: "years of practice" },
           ].map((s, i) => (
             <Reveal key={i} delay={0.3 + i * 0.08} className="border-t border-neutral-300 pt-4">
               <div className="font-display text-3xl md:text-4xl text-neutral-900">{s.n}</div>
@@ -330,7 +329,7 @@ function Introduction() {
 
         <Reveal delay={0.5}>
           <MagneticButton as={Link} to="/about" variant="ink">
-            Read Rahul's Story →
+            The Story Behind the Work →
           </MagneticButton>
         </Reveal>
       </div>
@@ -339,7 +338,7 @@ function Introduction() {
 );
 }
 
-/* ───────────────────────── 06 · CHARAN SPARSH (HERO MODULE) ───────────────────────── */
+/* ───────────────────────── 06 · CHARAN SPARSH ───────────────────────── */
 
 function CharanSparsh() {
   const ref = useRef<HTMLDivElement>(null);
@@ -358,7 +357,7 @@ function CharanSparsh() {
       <div className="max-w-[1500px] mx-auto px-6 lg:px-12">
         <div className="grid md:grid-cols-12 gap-12 mb-20">
           <Reveal className="md:col-span-5">
-            <div className="hairline text-gold mb-6">04 · The Signature Experience</div>
+            <div className="hairline text-gold mb-6">04 · Phase One</div>
             <h2 className="font-display text-[clamp(2.5rem,7vw,7rem)] leading-[0.92]">
               Charan
               <br />
@@ -367,10 +366,10 @@ function CharanSparsh() {
           </Reveal>
           <Reveal delay={0.15} className="md:col-span-7 md:pt-10">
             <p className="text-lg md:text-xl text-ivory/75 leading-relaxed max-w-2xl">
-              A 90-minute emotional experience that bypasses the head and walks straight
-              to the heart. Built on gratitude, respect and the oldest gesture in our
-              culture — the touch of a parent's feet — it has dissolved 25-year-old
-              silences in 25 minutes.
+              A live experience that works beneath the surface. Not a talk.
+              Not a seminar. A carefully constructed space where families encounter
+              what years of distance have obscured — and feel, perhaps for the first time,
+              the weight of what they have been carrying.
             </p>
           </Reveal>
         </div>
@@ -381,10 +380,10 @@ function CharanSparsh() {
           </div>
           <div className="md:col-span-5 grid gap-4 self-end">
             {[
-              { k: "90 MIN", v: "A single, uninterrupted experience" },
-              { k: "GRATITUDE", v: "Anchored in respect & emotional bonding" },
-              { k: "SCIENCE + SOUL", v: "Psychology meets Indian wisdom" },
-              { k: "OUTCOME", v: "A deep emotional awakening — felt, not taught" },
+              { k: "THE SPACE", v: "A single, uninterrupted experience. No phones. No performance." },
+              { k: "THE DEPTH", v: "Science, psychology, and ancient wisdom — converging in one room." },
+              { k: "THE GESTURE", v: "An act so simple, so old, it bypasses every wall the mind has built." },
+              { k: "THE OUTCOME", v: "An emotional awakening. Not taught. Felt. Remembered." },
             ].map((m, i) => (
               <Reveal key={i} delay={i * 0.08}>
                 <div className="border border-ivory/15 p-6 hover:border-gold/60 transition-colors duration-500 group">
@@ -399,10 +398,10 @@ function CharanSparsh() {
         <Reveal delay={0.3}>
           <div className="mt-16 flex flex-wrap items-center gap-6">
             <MagneticButton as={Link} to="/charan-sparsh" variant="gold">
-              Step Inside the Experience →
+              Enter the Experience →
             </MagneticButton>
             <Link to="/events" className="text-sm tracking-wide text-ivory/70 hover:text-ivory underline-offset-8 hover:underline">
-              See upcoming live dates
+              View upcoming dates
             </Link>
           </div>
         </Reveal>
@@ -419,40 +418,40 @@ function FamilyGroww() {
       <div className="max-w-[1500px] mx-auto px-6 lg:px-12">
         <div className="grid md:grid-cols-12 gap-12">
           <Reveal className="md:col-span-5 order-2 md:order-1">
-            <ImageReveal src={rahul7} alt="Family Groww workshop" ratio="3/4" className="shadow-elegant" />
+            <ImageReveal src={rahul7} alt="Family First Masterclass" ratio="3/4" className="shadow-elegant" />
           </Reveal>
           <div className="md:col-span-7 order-1 md:order-2 space-y-10">
             <Reveal>
-              <div className="hairline text-foreground/60">05 · The Deep Work</div>
+              <div className="hairline text-foreground/60">05 · Phase Two</div>
             </Reveal>
             <Reveal delay={0.1}>
               <h2 className="font-display text-[clamp(2rem,5.5vw,5rem)] leading-[0.95] max-w-[16ch]">
                 Family
-                <span className="font-serif-italic font-light text-foreground/70"> Groww </span>
-                Program.
+                <span className="font-serif-italic font-light text-foreground/70"> First </span>
+                Masterclass.
               </h2>
             </Reveal>
             <Reveal delay={0.2}>
               <p className="text-base md:text-lg text-foreground/70 leading-relaxed max-w-xl">
-                A 1–2 day immersive transformation that moves families from a single
-                emotional moment into a life-long operating system —
-                a shared vision, a clear set of values, and a way of speaking to each
-                other you'll keep using long after the room goes quiet.
+                A structured 1–2 day engagement for parents and their children — together.
+                Not a workshop. A deliberate intervention into the patterns
+                that have quietly governed the family, bringing them into the open
+                for the first time — and creating a shared foundation to move forward from.
               </p>
             </Reveal>
 
             <div className="grid sm:grid-cols-3 gap-6 max-w-2xl">
-              {["Vision", "Values", "Voice"].map((p, i) => (
+              {["Clarity", "Alignment", "Language"].map((p, i) => (
                 <Reveal key={p} delay={0.3 + i * 0.08}>
                   <div className="border-t border-foreground/20 pt-5">
                     <div className="font-display text-3xl mb-2">0{i + 1}</div>
                     <div className="text-foreground font-medium">{p}</div>
                     <p className="text-sm text-foreground/60 mt-2">
                       {i === 0
-                        ? "Where this family is going — together."
+                        ? "Understanding the patterns that created today."
                         : i === 1
-                        ? "What we will and won't trade for success."
-                        : "How we speak when it gets hard."}
+                        ? "A shared direction, named for the first time."
+                        : "Words for the conversations that have had none."}
                     </p>
                   </div>
                 </Reveal>
@@ -461,7 +460,7 @@ function FamilyGroww() {
 
             <Reveal delay={0.55}>
               <MagneticButton as={Link} to="/family-groww" variant="ink">
-                Explore the Program →
+                Understand the Process →
               </MagneticButton>
             </Reveal>
           </div>
@@ -475,21 +474,21 @@ function FamilyGroww() {
 
 function Journey() {
   const phases = [
-    { n: "01", t: "Reconnect", d: "A single emotional experience that breaks the silence and reopens the door — usually Charan Sparsh." },
-    { n: "02", t: "Realign", d: "1–2 days of deep work with the whole family — Family Groww — to build a shared vision, values and language." },
-    { n: "03", t: "Rebuild", d: "3–12 months of private coaching where the new way of being becomes the everyday way of living." },
+    { n: "01", t: "The Awakening", d: "Charan Sparsh — a live experience that opens what silence has sealed. The moment a family recognises its own distance." },
+    { n: "02", t: "The Alignment", d: "Family First Masterclass — a 1–2 day private engagement that moves a family from awareness into a shared foundation." },
+    { n: "03", t: "The Transformation", d: "Private Family Work — 6 to 12 months of direct, deeply personal engagement with Rahul. For two to three families each year." },
   ];
   return (
     <section className="bg-navy-deep text-ivory py-32 md:py-44 grain overflow-hidden">
       <div className="max-w-[1500px] mx-auto px-6 lg:px-12">
         <Reveal>
-          <div className="hairline text-gold mb-6">06 · The Journey</div>
+          <div className="hairline text-gold mb-6">06 · The Process</div>
         </Reveal>
         <Reveal delay={0.1}>
           <h2 className="font-display text-[clamp(2.25rem,6vw,6rem)] leading-[0.95] max-w-[14ch] mb-20">
-            Three rooms.
+            Three phases.
             <br />
-            <span className="font-serif-italic font-light text-gold-light">One family.</span>
+            <span className="font-serif-italic font-light text-gold-light">One transformation.</span>
           </h2>
         </Reveal>
 
@@ -522,25 +521,25 @@ function Impact() {
         <div className="grid md:grid-cols-12 gap-12 items-end mb-16">
           <Reveal className="md:col-span-7">
             <h2 className="font-display text-[clamp(2.25rem,6vw,5.5rem)] leading-[0.95] max-w-[15ch]">
-              A reach measured
+              Not measured
               <br />
-              <span className="font-serif-italic font-light text-gradient-gold">in tears, hugs, and homecomings.</span>
+              <span className="font-serif-italic font-light text-gradient-gold">in numbers. In homecomings.</span>
             </h2>
           </Reveal>
           <Reveal delay={0.15} className="md:col-span-5">
             <p className="text-ivory/70 leading-relaxed max-w-md">
-              Across five countries and twenty-five years, the proof has never been a metric on a slide.
-              It's been the sound of a son finally saying the thing he should have said a decade ago.
+              The families who have entered this process do not speak of it lightly.
+              They speak of it the way one speaks of a turning point — quietly, and with precision.
             </p>
           </Reveal>
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-px bg-ivory/10 border-y border-ivory/10">
           {[
-            { n: "50K+", t: "Lives Touched" },
+            { n: "2–3", t: "Families Per Year" },
             { n: "5", t: "Countries" },
-            { n: "25 yrs", t: "On Stage" },
-            { n: "100%", t: "Family-First" },
+            { n: "25 yrs", t: "Of Private Work" },
+            { n: "6–12", t: "Months of Depth" },
           ].map((s, i) => (
             <Reveal key={i} delay={i * 0.08} className="bg-ink">
               <div className="p-10 text-center">
@@ -560,19 +559,19 @@ function Impact() {
 function Stories() {
   const quotes = [
     {
-      q: "I touched my father's feet for the first time in 22 years. Both of us cried. Something I had been carrying my whole life — fell.",
+      q: "I touched my father's feet for the first time in 22 years. Something I had been carrying my entire life — fell away in that room.",
       a: "Vikram S.",
       r: "Entrepreneur · Mumbai",
     },
     {
-      q: "I went in as a CEO. I came out as a son. My mother is 79. I still have time. That's the gift Rahul gave me.",
+      q: "I entered as someone who had built everything. I left understanding what I had quietly let go of. Rahul works in a space no one else has found.",
       a: "Anand R.",
-      r: "Tech Founder · Bengaluru",
+      r: "Founder · Bengaluru",
     },
     {
-      q: "Our family talks now. Actually talks. Not about logistics — about life. We hadn't done that in years.",
-      a: "Priya & Karan",
-      r: "Couple · Dubai",
+      q: "We do not speak about what happened in those months easily. But we speak about it with gratitude. Something was repaired that we had stopped believing could be.",
+      a: "The Mehta Family",
+      r: "Private Engagement · Dubai",
     },
   ];
   return (
@@ -580,16 +579,16 @@ function Stories() {
       <div className="max-w-[1500px] mx-auto px-6 lg:px-12">
         <div className="flex items-end justify-between mb-16 flex-wrap gap-6">
           <Reveal>
-            <div className="hairline text-foreground/60 mb-4">07 · The Proof</div>
+            <div className="hairline text-foreground/60 mb-4">07 · Accounts</div>
             <h2 className="font-display text-[clamp(2rem,5.5vw,5rem)] leading-[0.95] max-w-[14ch]">
-              They came for a session.
+              They entered with distance.
               <br />
-              <span className="font-serif-italic font-light text-foreground/70">They left with their family back.</span>
+              <span className="font-serif-italic font-light text-foreground/70">They left with clarity.</span>
             </h2>
           </Reveal>
           <Reveal delay={0.2}>
             <Link to="/testimonials" className="text-sm tracking-wide hover:text-foreground/70 underline-offset-8 underline">
-              All stories →
+              Read more accounts →
             </Link>
           </Reveal>
         </div>
@@ -626,32 +625,32 @@ function FinalCTA() {
       </div>
       <div className="relative max-w-[1100px] mx-auto px-6 text-center">
         <Reveal>
-          <div className="hairline text-gold mb-8">A Quiet Invitation</div>
+          <div className="hairline text-gold mb-8">A Private Invitation</div>
         </Reveal>
         <Reveal delay={0.1}>
           <h2 className="font-display text-[clamp(2.5rem,7vw,6.5rem)] leading-[0.95] max-w-[16ch] mx-auto">
-            <SplitWords text="The call you've been" className="text-ivory" />
+            <SplitWords text="If this has already" className="text-ivory" />
             <br />
             <span className="font-serif-italic font-light text-gold-light">
-              <SplitWords text="meaning to make —" delay={0.2} className="text-gold-light" />
+              <SplitWords text="said something to you —" delay={0.2} className="text-gold-light" />
             </span>
             <br />
-            <SplitWords text="make it now." delay={0.45} className="text-ivory" />
+            <SplitWords text="you know the next step." delay={0.45} className="text-ivory" />
           </h2>
         </Reveal>
         <Reveal delay={0.5}>
           <p className="mt-10 text-ivory/65 max-w-xl mx-auto leading-relaxed">
-            One conversation. One room. One ninety-minute experience.
-            That's how families come home.
+            This process is entered, not enrolled in.
+            The first step is a conversation — private, unhurried, without obligation.
           </p>
         </Reveal>
         <Reveal delay={0.65}>
           <div className="mt-12 flex items-center justify-center gap-5 flex-wrap">
             <MagneticButton as={Link} to="/contact" variant="gold">
-              Begin Your Family Transformation →
+              Begin the Process →
             </MagneticButton>
             <MagneticButton as={Link} to="/events" variant="ghost" className="text-ivory border-ivory/40">
-              See Upcoming Events
+              Attend an Experience
             </MagneticButton>
           </div>
         </Reveal>
