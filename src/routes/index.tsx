@@ -277,65 +277,58 @@ function RealityContrast() {
 
 function Introduction() {
   return (
-    <section className="bg-ivory text-ink py-32 md:py-44 grain">
-      <div className="max-w-[1500px] mx-auto px-6 lg:px-12 grid md:grid-cols-12 gap-12 md:gap-20 items-center">
-        <Reveal className="md:col-span-5">
-          <ImageReveal src={rahul13} alt="Rahul Kapoor" ratio="4/5" className="shadow-elegant" />
-        </Reveal>
-
-      <div className="md:col-span-7 space-y-12">
-
-        <Reveal>
-          <div className="hairline text-foreground/60">
-            03 · The Work
-          </div>
-        </Reveal>
-
-        <Reveal delay={0.1}>
-          <h2 className="font-display text-[clamp(2.2rem,5vw,4.75rem)] leading-[0.95] max-w-[18ch] tracking-tight">
-            <SplitWords text="Rahul Kapoor works" className="text-ink" />
-            <br />
-            <span className="font-serif italic font-light">
-              <SplitWords text="where others" delay={0.2} className="text-foreground/70" />
-            </span>
-            <span className="block">
-              <SplitWords text="have not gone." delay={0.35} className="text-ink" />
-            </span>
-          </h2>
-        </Reveal>
-
-        <Reveal delay={0.2}>
-          <p className="text-base md:text-lg text-neutral-600 leading-relaxed max-w-xl">
-            For over two decades, he has worked quietly —{" "}
-            <span className="text-neutral-900">observing families in their truth, not their performance.</span>
-            <br className="hidden md:block" />
-            He does not offer methods. He enters the specific, private terrain of a family
-            and works with what is actually there — the unspoken, the inherited, the long-buried.
-          </p>
-        </Reveal>
-
-        <div className="grid grid-cols-3 gap-8 max-w-xl pt-4">
-          {[
-            { n: "2–3", t: "families per year" },
-            { n: "5", t: "countries" },
-            { n: "25", t: "years of practice" },
-          ].map((s, i) => (
-            <Reveal key={i} delay={0.3 + i * 0.08} className="border-t border-neutral-300 pt-4">
-              <div className="font-display text-3xl md:text-4xl text-neutral-900">{s.n}</div>
-              <div className="text-xs tracking-[0.2em] uppercase text-neutral-500 mt-2">{s.t}</div>
-            </Reveal>
-          ))}
+    <section className="bg-ivory text-ink">
+      <div className="grid md:grid-cols-2 gap-12 items-center">
+        
+        {/* Left Image */}
+        <div>
+          <img
+            src="/images/rahul.jpg"
+            alt="Rahul Kapoor"
+            className="w-full h-auto object-cover"
+          />
         </div>
 
-        <Reveal delay={0.5}>
-          <MagneticButton as={Link} to="/about" variant="ink">
-            The Story Behind the Work →
-          </MagneticButton>
-        </Reveal>
+        {/* Right Content */}
+        <div>
+          <h2 className="font-display text-[clamp(2.2rem,5vw,4.75rem)] leading-[0.95] max-w-[18ch] tracking-tight">
+            
+            <SplitWords
+              text="Rahul Kapoor has spent"
+              className="text-ink"
+            />
+
+            <br />
+
+            <span className="font-serif italic font-light">
+              <SplitWords
+                text="25 years"
+                delay={0.2}
+                className="text-neutral-800"
+              />
+            </span>
+
+            <span className="block">
+              <SplitWords
+                text="learning what families forget."
+                delay={0.35}
+                className="text-ink"
+              />
+            </span>
+
+          </h2>
+
+          <p className="mt-8 text-lg text-neutral-700 max-w-xl leading-relaxed">
+            A transformational speaker and family mindset coach, Rahul stands at the rare
+            intersection of psychology, science and Indian wisdom.
+            He doesn't sell hacks. He gives families their own voices back — the ones
+            that got buried under deadlines, devices, and well-meaning ambition.
+          </p>
+        </div>
+
       </div>
-    </div>
-  </section>
-);
+    </section>
+  );
 }
 
 /* ───────────────────────── 06 · CHARAN SPARSH ───────────────────────── */
