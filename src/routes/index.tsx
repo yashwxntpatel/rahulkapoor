@@ -22,7 +22,7 @@ export const Route = createFileRoute("/")({
     ],
   }),
   component: HomePage,
-}));
+});
 
 function HomePage() {
   return (
@@ -57,20 +57,20 @@ function Hero() {
       className="relative min-h-[100svh] overflow-hidden bg-ink text-ivory grain"
     >
       <motion.div style={{ scale, y }} className="absolute inset-0">
-  <motion.video
-    src={heroBg}
-    autoPlay
-    muted
-    loop
-    playsInline
-    initial={{ scale: 1.25, filter: "blur(24px)", opacity: 0 }}
-    animate={{ scale: 1, filter: "blur(0px)", opacity: 0.99 }}
-    transition={{ duration: 2.2, ease: [0.22, 1, 0.36, 1] }}
-    className="w-full h-full object-cover"
-  />
-  <div className="absolute inset-0 bg-gradient-to-r from-ink via-ink/70 to-transparent" />
-  <div className="absolute inset-0 bg-gradient-to-t from-ink via-transparent to-ink/60" />
-</motion.div>
+        <motion.video
+          src={heroBg}
+          autoPlay
+          muted
+          loop
+          playsInline
+          initial={{ scale: 1.25, filter: "blur(24px)", opacity: 0 }}
+          animate={{ scale: 1, filter: "blur(0px)", opacity: 0.99 }}
+          transition={{ duration: 2.2, ease: [0.22, 1, 0.36, 1] }}
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-ink via-ink/70 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-ink via-transparent to-ink/60" />
+      </motion.div>
 
       <motion.div
         style={{ opacity }}
@@ -279,7 +279,7 @@ function Introduction() {
   return (
     <section className="bg-ivory text-ink">
       <div className="grid md:grid-cols-2 gap-12 items-center">
-        
+
         {/* Left Image */}
         <div>
           <img
@@ -292,14 +292,11 @@ function Introduction() {
         {/* Right Content */}
         <div>
           <h2 className="font-display text-[clamp(2.2rem,5vw,4.75rem)] leading-[0.95] max-w-[18ch] tracking-tight">
-            
             <SplitWords
               text="Rahul Kapoor has spent"
               className="text-ink"
             />
-
             <br />
-
             <span className="font-serif italic font-light">
               <SplitWords
                 text="25 years"
@@ -307,7 +304,6 @@ function Introduction() {
                 className="text-neutral-800"
               />
             </span>
-
             <span className="block">
               <SplitWords
                 text="learning what families forget."
@@ -315,7 +311,6 @@ function Introduction() {
                 className="text-ink"
               />
             </span>
-
           </h2>
 
           <p className="mt-8 text-lg text-neutral-700 max-w-xl leading-relaxed">
