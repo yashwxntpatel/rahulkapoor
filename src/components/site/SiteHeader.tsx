@@ -32,7 +32,7 @@ export function SiteHeader() {
       className={`fixed top-0 inset-x-0 z-50 transition-all duration-700 ${
         scrolled
           ? "bg-ivory/85 backdrop-blur-2xl border-b border-foreground/10 py-3 text-ink"
-          : "bg-transparent py-6 text-ivory"
+          : "bg-ivory/10 backdrop-blur-xl py-6 text-ink border-b border-foreground/10"
       }`}
     >
       <div className="max-w-[1500px] mx-auto px-6 lg:px-12 flex items-center justify-between">
